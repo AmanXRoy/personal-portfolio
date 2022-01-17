@@ -1,0 +1,472 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,300;0,400;0,500;0,600;1,400;1,600&display=swap');
+
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    text-decoration: none !important;
+    list-style: none;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    transition: all 0.3s linear;   
+    text-transform: capitalize;
+}
+*::selection{
+    background:var(--textcolor);
+    color: rgb(255, 255, 255);
+}
+
+:root{
+    --primarycolor:#cc1830;
+    --secondrycolor:#ffffff;
+    --textcolor:#222222;
+}
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-thumb{
+    background: var(--primarycolor);
+}
+::-webkit-scrollbar-track{
+    background: var(--textcolor);
+}
+
+html{
+    font-size: 62%;
+}
+
+body {
+}
+.dark--mode{
+    background: rgb(9, 2, 71);
+   
+    
+}
+
+body{
+    overflow-x: hidden;
+
+
+}
+header{
+    margin: 1rem 0;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 70;
+   
+    
+}
+header .container{
+    display: flex;
+    justify-content :space-between;
+    align-items: center;
+   
+       
+}
+
+header .container .nav-logo{
+    padding: 0.9rem;
+    background: var(--primarycolor);
+    color: var(--secondrycolor);
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.nav--bar{
+
+}
+.nav--bar ul{
+    margin: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav--bar ul li{
+    margin: 1rem;
+}
+.nav--bar ul li a{
+    color: var(--textcolor);
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin: 0.8rem;
+}
+.nav--bar ul li a:hover{
+    border-bottom: 3px solid var(--primarycolor);
+}
+.fa-bars{
+    color: var(--textcolor);
+    font-size: 2rem;
+    display: none;
+}
+
+.box1{
+    display: flex;
+    align-items: center;
+    
+}
+.box1 .search{
+    font-size: 2rem;
+    color: var(--primarycolor);
+    margin: 1rem;
+}
+.login{
+    border-radius: 10px;
+    margin: 0 1rem;
+    font-size: 1.7rem;
+    color: var(--secondrycolor);
+    background: var(--primarycolor);
+    padding: 0.5rem 1.4rem;
+    font-weight: 600;
+}
+
+.hero--section{
+    padding: 3rem;
+    margin: 8rem 0;
+   }
+.hero--section .container{
+    padding: 2rem;
+    display: flex;
+    justify-content: c;
+    align-items: center;
+}
+
+.hero--section img{
+    border: 10px solid var(--primarycolor);
+    z-index: 50;
+    height: 300px;
+    width: 300px;
+    margin: 0 1rem;
+    border-radius: 50%;
+}
+.name--part {
+    z-index: 1;
+    display: flex;
+    flex-flow: column;
+}
+.name--part .firstname{
+
+    color: var(--primarycolor);
+    font-weight: 600;
+    font-style: italic;
+    font-size: 7.5rem;
+}
+.name--part .surname{
+    position: relative;
+    left: 10px;
+    font-size: 7rem;
+    font-style: italic;
+    color: var(--textcolor);
+    font-weight: 600;
+}
+.paragraph--part{
+    z-index: 1;
+    margin: 1rem;
+    
+}
+.paragraph--part .profile{
+    font-size: 4.5rem;
+    color: var(--primarycolor);
+    font-weight: 600;
+    font-style: italic;
+}
+.paragraph--part .info{
+    font-size: 1.5rem;
+    color: var(--textcolor);
+    margin: 0 0 3rem 0;
+}
+.cvbtn{
+    border-radius: 5px;
+    border: 3px solid var(--primarycolor);
+    padding: 1rem 3rem;
+    font-size: 2rem;
+    color: var(--textcolor);
+    font-weight: 600;
+}
+.cvbtn:hover{
+    background: var(--primarycolor);
+    color:var(--secondrycolor);
+    
+   
+}
+.about--me{
+    margin: 9rem 0;
+}
+.about--me h1{
+    font-weight: 600;
+    font-style: italic;
+    font-size: 5rem;
+    margin: 2.5rem 0;
+    color: var(--primarycolor);
+}
+.about--me .container{
+
+}
+
+.mark1{
+    color: var(--primarycolor);
+    font-size: 31rem;
+}
+
+.about--me--part{
+
+}
+.about--me--part .p1{
+    font-weight: 600;   
+    font-size: 3.6rem;
+    color: var(--textcolor);
+}
+
+.about--me--part .p2{
+    font-weight: 600;
+    font-size: 3.4rem;
+    color: var(--primarycolor);
+}
+
+.about--me--part .p3 ,.p4 ,.p5{
+    font-size: 2rem;
+    color: var(--textcolor);
+}
+.about--me .container .aboutme-img-part{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about--me .container .aboutme--img{
+    height: 350px;
+    width: 400px;
+    object-fit: cover;
+}
+.projects{
+    margin: 5rem 0;
+    
+}
+
+.projects h1{
+    font-weight: 600;
+    font-style: italic;
+    font-size: 5rem;
+    margin: 2.5rem 0;
+    color: var(--primarycolor);
+}
+.projects .container{
+    display: flex;
+    padding: 1rem;
+}
+
+.projects .container .box1{
+    display: flex  ;
+    flex-flow: column;
+    padding: 1rem;  
+    flex: 1 1 30rem;
+}
+.projects .container .box1 img{
+    height: 200px;
+    width: 300px;
+}
+.projects .container .box1 img:hover{
+    filter: blur(4px);
+    transform: skew(15deg);
+}
+.projects .container .box1 p{
+    font-size: 2rem;
+    font-weight: 600;
+    font-style: italic;
+}
+.fa-times{
+    transform: rotate(180deg);
+}
+
+.education{
+    margin: 8rem 0;
+    padding: 3rem;
+
+}
+.education h1{
+    color: var(--primarycolor);
+    font-size: 5rem;
+    font-weight: 600;
+    font-style: italic;
+    margin: 2.5rem 0;
+}
+ .education .container{
+    display: flex;   
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+.fa-graduation-cap{
+    font-size: 3rem;
+    color: var(--primarycolor);
+    padding-left: 1.8rem;
+}
+.box{
+    margin: 4rem 0;
+    position: relative;
+    border-left: 4px solid var(--textcolor);
+}
+.box p{
+    color: var(--textcolor);
+    font-size: 2rem;
+    padding-left: 1.8rem;
+}
+
+.education .box{
+    width: 270px;
+    padding: 1rem;
+    
+ 
+
+}
+.fa-graduation-cap{
+    color:var(--primarycolor);
+}
+
+.contact--form h1{
+    font-size: 5rem;
+    font-weight: 600;
+    font-style: italic;
+    color: var(--primarycolor);
+    margin: 2.5rem 0;
+   
+}
+
+.contact--form .container{
+    background: var(--primarycolor);
+    color: var(--secondrycolor);
+    
+}
+.contact--form .container form{
+    padding: 0.6rem;
+}
+.contact--form .container .col-6 p{
+    color: var(--secondrycolor);
+    font-size: 2rem;
+    margin: 1rem 0 0 0;
+    font-style: normal;
+    font-weight: 600;
+}
+.contact--form .container .name-label ,.no-label,.message-label{
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+.contact--form .container .btn{
+    padding: 1rem;
+    font-size: 1.5rem;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+@media(max-width:768px)
+{
+    html{
+        font-size: 45%;
+    }
+    header .nav--toggle{
+        top: 50%;
+        opacity: 1;
+    }
+     header .nav-logo{
+        font-weight: 600;
+    }
+    .hero--section{
+        margin: 0;
+    }
+    .hero--section  img{
+        height: 200px;
+        width: 200px;
+    }
+    .name--part{
+        flex-flow: column;
+        text-align: center;
+    }
+    .name--part .firstname{
+        
+    }
+    .name--part .surname{
+        left: 0;
+    }
+
+    .nav--bar{
+        position: fixed;
+        transform: translate(-50%,-50%);
+        top: 50%;
+        left: -100rem;
+        z-index: 60;
+        width: 100%;
+        
+        
+          }
+          header .nav--toggle{
+              opacity: 1;
+              left: 50%;
+          }
+    
+    .fa-bars{
+        display: block;
+        font-size: 3rem;
+    }
+    .box1{
+        display: none;
+    }
+    .nav--bar ul{
+        background: var(--primarycolor);
+      display: block;
+      padding: 2rem;
+    }
+    .nav--bar ul li{
+        width: 100%;
+        margin: 3.5rem 0;
+        text-align: center;
+    }
+    .nav--bar ul li a{
+    
+        font-size: 2.5rem;
+    }
+
+    .hero--section{
+
+    }
+    .hero--section .container{
+        flex-flow: column;
+        text-align: center;
+    }
+    .about--me{
+
+    }
+    .about--me .about--me--part{
+        display: block;
+        text-align: center;
+    }
+    .education .box{
+        width: 100%;
+        text-align: center;
+        font-weight: 600;
+    }
+    .projects .container {
+        flex-flow: column;
+        display: block;
+        padding: 2rem;
+    }
+    .contact--form .container{
+        display: flex;
+        flex-flow: column;
+    }
+    .contact--form .container .row{
+             flex-flow: column;
+             display: flex;
+             justify-content: center;
+             align-items: center;
+    }
+    .contact--form .container .col-6{
+    
+    }
+}
+
+
